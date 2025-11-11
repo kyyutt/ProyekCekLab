@@ -1,5 +1,3 @@
-# .streamlit/config.toml
-
 [theme]
 
 # Warna "primer" untuk widget interaktif (tombol, selectbox, dll)

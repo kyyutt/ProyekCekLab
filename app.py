@@ -174,7 +174,6 @@ else:
             status, detail_bentrok = cek_ketersediaan_db(input_hari, input_ruang, input_jam_str)
             
             if status == "TERSEDIA":
-                st.balloons()
                 st.success(f"**Status: TERSEDIA (State q4)**\n\nRuang **{input_ruang}** dapat digunakan.")
             elif status == "DIGUNAKAN":
                 st.error(f"**Status: DIGUNAKAN (State q5)**\n\nRuang **{input_ruang}** sedang dipakai untuk:")
