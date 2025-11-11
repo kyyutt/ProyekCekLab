@@ -1,0 +1,18 @@
+# .streamlit/config.toml
+
+[theme]
+
+# Warna "primer" untuk widget interaktif (tombol, selectbox, dll)
+primaryColor="#0A74DA" # Biru yang kuat dan modern
+
+# Warna latar belakang utama aplikasi
+backgroundColor="#FFFFFF" # Putih bersih
+
+# Warna latar belakang untuk area seperti sidebar dan widget
+secondaryBackgroundColor="#F0F8FF" # Biru sangat muda (AliceBlue)
+
+# Warna teks utama
+textColor="#0D1117" # Hitam/Abu-abu gelap agar mudah dibaca
+
+# Font (biarkan 'sans serif' untuk tampilan bersih/modern)
+font="sans serif"
