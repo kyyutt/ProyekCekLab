@@ -282,18 +282,18 @@ else:
             - **State Final ($F$):** `{$q_3, q_4$}`
             
             **Fungsi Transisi ($\delta$):**
-            - **$\delta(q_0, 1) \rightarrow \{q_1\}$** (Input 'Hari' valid)
-            - **$\delta(q_0, 0) \rightarrow \{q_0\}$** (Input 'Hari' tidak valid/Stay)
-            - **$\delta(q_1, 1) \rightarrow \{q_2\}$** (Input 'Ruang' valid)
-            - **$\delta(q_1, 0) \rightarrow \{q_0\}$** (Kembali ke Pilih Hari)
-            - **$\delta(q_2, 0) \rightarrow \{q_1\}$** (Kembali ke Pilih Ruang)
-            - **$\delta(q_2, 1) \rightarrow \{q_3, q_4\}$** (**Transisi Non-Deterministik**)
+            - **$\delta(q_0, 1) = \{q_1\}$** (Input 'Hari' valid)
+            - **$\delta(q_0, 0) = \{q_0\}$** (Input 'Hari' tidak valid/Stay)
+            - **$\delta(q_1, 1) = \{q_2\}$** (Input 'Ruang' valid)
+            - **$\delta(q_1, 0) = \{q_0\}$** (Kembali ke Pilih Hari)
+            - **$\delta(q_2, 0) = \{q_1\}$** (Kembali ke Pilih Ruang)
+            - **$\delta(q_2, 1) = \{q_3, q_4\}$** (**Transisi Non-Deterministik**)
                 - *Logika aplikasi akan memilih $q_3$ jika TERSEDIA.*
                 - *Logika aplikasi akan memilih $q_4$ jika DIGUNAKAN.*
-            - **$\delta(q_3, 1) \rightarrow \{q_0\}$** (Reset dari hasil 'Tersedia')
-            - **$\delta(q_4, 1) \rightarrow \{q_0\}$** (Reset dari hasil 'Digunakan')
-            - **$\delta(q_3, 0) \rightarrow \emptyset$** (Tidak ada transisi 'Back' di hasil)
-            - **$\delta(q_4, 0) \rightarrow \emptyset$** (Tidak ada transisi 'Back' di hasil)
+            - **$\delta(q_3, 1) = \{q_0\}$** (Reset dari hasil 'Tersedia')
+            - **$\delta(q_4, 1) = \{q_0\}$** (Reset dari hasil 'Digunakan')
+            - **$\delta(q_3, 0) = \emptyset$** (Tidak ada transisi 'Back' di hasil)
+            - **$\delta(q_4, 0) = \emptyset$** (Tidak ada transisi 'Back' di hasil)
             
             **Teknologi yang Digunakan:**
             - Python, Streamlit (UI & State Management)
